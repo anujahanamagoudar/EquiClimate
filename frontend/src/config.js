@@ -1,0 +1,6 @@
+// Backend configuration
+const config = {
+  API_BASE_URL: process.env.REACT_APP_API_URL || 'http://localhost:8081',
+};
+
+export default config;

@@ -1,0 +1,290 @@
+.main-dashboard {
+  width: min(1040px, 100%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.header-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.82rem;
+}
+
+.main-header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 2.5vw, 2.8rem);
+  line-height: 1.05;
+  color: #0f172a;
+}
+
+.header-note {
+  max-width: 760px;
+  margin: 0;
+  color: #475569;
+  line-height: 1.8;
+}
+
+.logout-btn {
+  padding: 10px 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #0f172a;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.logout-btn:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+
+.top-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 24px;
+}
+
+.table-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr;
+  gap: 24px;
+}
+
+.card-panel {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 26px;
+  padding: 28px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.05);
+}
+
+.panel-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.panel-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #0f172a;
+}
+
+.panel-note {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.insight-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.insight-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 20px;
+  border-radius: 20px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.insight-item h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+  color: #0f172a;
+}
+
+.insight-item p {
+  margin: 0;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.gap-pill {
+  display: inline-flex;
+  min-width: 52px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #fee2e2;
+  color: #b91c1c;
+  font-weight: 700;
+}
+
+.comparison-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.comparison-row {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr auto;
+  gap: 16px;
+  align-items: center;
+}
+
+.bar-track {
+  height: 14px;
+  background: #f1f5f9;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 999px;
+}
+
+.bar-fill.emissions {
+  background: #0f172a;
+}
+
+.bar-fill.contribution {
+  background: #2563eb;
+}
+
+.region-table table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.region-table th,
+.region-table td {
+  text-align: left;
+  padding: 14px 16px;
+  color: #334155;
+}
+
+.region-table th {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #475569;
+}
+
+.region-table tbody tr {
+  cursor: pointer;
+  transition: background-color 150ms ease, transform 150ms ease;
+}
+
+.region-table tbody tr:hover {
+  background: #f8fafc;
+  transform: translateY(-1px);
+}
+
+.region-table tbody tr.selected-row {
+  background: #eef2ff;
+}
+
+.region-table tbody tr.highlight-row {
+  color: #b91c1c;
+}
+
+.region-table tbody tr.highlight-row td {
+  background: rgba(254, 226, 226, 0.6);
+}
+
+.region-table td {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.detail-card {
+  background: #f8fafc;
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.detail-card span {
+  display: block;
+  color: #475569;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.detail-card strong {
+  display: block;
+  font-size: 1.5rem;
+  color: #0f172a;
+}
+
+.reasons-block h3 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+  color: #0f172a;
+}
+
+.reasons-block ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #475569;
+  line-height: 1.8;
+}
+
+.reasons-block li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 920px) {
+  .top-grid,
+  .table-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .card-panel {
+    padding: 22px;
+  }
+
+  .region-table th,
+  .region-table td {
+    padding: 12px 14px;
+  }
+
+  .comparison-row {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-row strong {
+    margin-top: 10px;
+  }
+}

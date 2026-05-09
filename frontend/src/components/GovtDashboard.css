@@ -1,0 +1,239 @@
+.govt-dashboard {
+  padding: 36px 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.govt-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 24px;
+}
+
+.govt-header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #0f172a;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.header-note {
+  margin: 0 0 12px 0;
+  color: #4b5563;
+}
+
+.logout-btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #111827;
+  cursor: pointer;
+}
+
+.card-panel {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.panel-header h2 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  color: #111827;
+}
+
+.panel-note {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.top-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.priority-list,
+.policy-list {
+  display: grid;
+  gap: 16px;
+}
+
+.priority-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 10px;
+}
+
+.priority-rank {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  min-width: 30px;
+}
+
+.priority-item h3 {
+  margin: 0;
+  font-size: 15px;
+  color: #0f172a;
+}
+
+.priority-item p,
+.region-summary div,
+.policy-list li {
+  margin: 0;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.policy-list li {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.6;
+}
+
+.details-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.scheme-panel,
+.region-panel {
+  display: grid;
+  gap: 20px;
+}
+
+.scheme-form,
+.support-form,
+.alert-form,
+.notes-form {
+  display: grid;
+  gap: 14px;
+}
+
+.scheme-form input,
+.scheme-form textarea,
+.support-form input,
+.support-form textarea,
+.notes-form input,
+.notes-form textarea,
+.alert-form input,
+.region-select-row select,
+.edit-grid input {
+  width: 100%;
+  min-height: 44px;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #111827;
+}
+
+.scheme-form textarea,
+.support-form textarea,
+.notes-form textarea {
+  min-height: 90px;
+}
+
+.scheme-form button,
+.save-btn,
+.support-form button,
+.notes-form button,
+.alert-form button {
+  width: fit-content;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #0f172a;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.scheme-list,
+.support-list,
+.notes-list,
+.alert-list {
+  display: grid;
+  gap: 14px;
+}
+
+.scheme-card,
+.support-card,
+.note-card,
+.alert-card {
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.scheme-card h3,
+.support-card h3,
+.note-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 15px;
+  color: #0f172a;
+}
+
+.note-card p,
+.alert-card p,
+.scheme-card p,
+.support-card p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.note-card small,
+.support-card small,
+.scheme-card small {
+  display: block;
+  margin-top: 10px;
+  color: #6b7280;
+}
+
+.region-select-row,
+.edit-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.edit-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.region-summary {
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+  background: #f8fafc;
+  border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+  .top-grid,
+  .details-grid,
+  .edit-grid {
+    grid-template-columns: 1fr;
+  }
+}

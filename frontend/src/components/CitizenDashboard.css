@@ -1,0 +1,389 @@
+.citizen-dashboard {
+  width: min(900px, 100%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.citizen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.citizen-header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 2.5vw, 2.8rem);
+  line-height: 1.05;
+  color: #0f172a;
+}
+
+.header-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.header-note {
+  margin: 0;
+  color: #475569;
+  line-height: 1.8;
+  text-align: right;
+  font-size: 0.96rem;
+}
+
+.logout-btn {
+  padding: 10px 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #0f172a;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.logout-btn:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.card-panel {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 26px;
+  padding: 28px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.05);
+}
+
+.panel-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.panel-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #0f172a;
+}
+
+.panel-note {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.selector-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+  align-items: center;
+}
+
+.geo-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+  align-items: center;
+}
+
+.geo-btn {
+  padding: 12px 24px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #0f172a;
+  font-weight: 700;
+  cursor: pointer;
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+
+.geo-btn:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+}
+
+.location-error {
+  color: #dc2626;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.location-coordinates {
+  color: #475569;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.inequality-alert {
+  margin-top: 16px;
+  padding: 14px 18px;
+  background: #fef2f2;
+  border-left: 4px solid #dc2626;
+  color: #991b1b;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.location-dropdown {
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #0f172a;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.location-dropdown:hover {
+  border-color: #cbd5e1;
+}
+
+.location-dropdown:focus {
+  outline: none;
+  border-color: #94a3b8;
+  box-shadow: 0 0 0 4px rgba(148, 163, 184, 0.14);
+}
+
+.analyze-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  background: #0f172a;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 150ms ease, transform 150ms ease;
+  min-width: 140px;
+}
+
+.analyze-btn:hover:not(:disabled) {
+  background: #111827;
+  transform: translateY(-1px);
+}
+
+.analyze-btn:disabled {
+  background: #cbd5e1;
+  cursor: not-allowed;
+}
+
+.risk-status {
+  margin-top: 8px;
+}
+
+.risk-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+  border-left: 6px solid #0f172a;
+  background: #f8fafc;
+  border-radius: 16px;
+}
+
+.risk-level-badge {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.risk-details p {
+  margin: 10px 0;
+  color: #334155;
+  line-height: 1.7;
+}
+
+.risk-details strong {
+  color: #0f172a;
+}
+
+.risk-alert {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 10px;
+  background: #f8fafc;
+  border-left: 4px solid #2563eb;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.inequality-alert {
+  margin-top: 12px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  background: #fef2f2;
+  border-left: 4px solid #dc2626;
+  color: #991b1b;
+}
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.reasons-panel,
+.suggestions-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.reasons-list,
+.suggestions-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.reasons-list li,
+.suggestions-list li {
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #f8fafc;
+  color: #334155;
+  line-height: 1.7;
+  border-left: 3px solid #2563eb;
+}
+
+.support-panel {
+  margin-top: 8px;
+}
+
+.schemes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.scheme-card {
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+}
+
+.scheme-card h3 {
+  margin: 0 0 10px;
+  color: #0f172a;
+  font-size: 1rem;
+}
+
+.scheme-card p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.error-message {
+  padding: 20px;
+  background: #fee2e2;
+  border-radius: 16px;
+  color: #b91c1c;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .citizen-header {
+    flex-direction: column;
+  }
+
+  .header-actions {
+    align-items: flex-start;
+  }
+
+  .header-note {
+    text-align: left;
+  }
+
+  .selector-row {
+    grid-template-columns: 1fr;
+  }
+
+  .analyze-btn {
+    width: 100%;
+  }
+
+  .insights-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .citizen-dashboard {
+    gap: 20px;
+  }
+
+  .card-panel {
+    padding: 20px;
+  }
+
+  .risk-card {
+    grid-template-columns: 1fr;
+  }
+
+  .risk-level-badge {
+    width: 80px;
+    height: 80px;
+    font-size: 1rem;
+  }
+
+  .schemes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.support-badge {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+.empty-state {
+  padding: 24px;
+  text-align: center;
+  color: #64748b;
+  background: #f1f5f9;
+  border-radius: 10px;
+  line-height: 1.6;
+}
