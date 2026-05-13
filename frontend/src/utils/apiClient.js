@@ -10,6 +10,8 @@ const buildFallbackPaths = (endpoint) => {
   
   return [
     `${baseUrl}/api/${normalized}`,
+    `${baseUrl}/api/analytics/${normalized}`,
+    `${baseUrl}/api/auth/${normalized}`,
     `${baseUrl}/api/v1/${normalized}`,
     `${baseUrl}/${normalized}`,
     `${baseUrl}/auth/${normalized}`,

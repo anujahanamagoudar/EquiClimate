@@ -22,6 +22,58 @@
   font-weight: 700;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.header-note {
+  margin: 12px 0 0;
+  color: #64748b;
+  line-height: 1.75;
+  font-size: 0.98rem;
+  max-width: 680px;
+}
+
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.stat-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stat-title {
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.82rem;
+}
+
+.geo-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+  align-items: center;
+}
+
+.location-coordinates {
+  margin: 0;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
 .citizen-header h1 {
   margin: 0;
   font-size: clamp(2rem, 2.5vw, 2.8rem);
@@ -126,6 +178,12 @@
   margin: 0;
 }
 
+.location-status {
+  color: #1f4d8d;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
 .location-coordinates {
   color: #475569;
   font-size: 0.95rem;
@@ -162,6 +220,36 @@
   outline: none;
   border-color: #94a3b8;
   box-shadow: 0 0 0 4px rgba(148, 163, 184, 0.14);
+}
+
+.location-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.location-chip {
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  color: #0f172a;
+  cursor: pointer;
+  transition: background-color 150ms ease, border-color 150ms ease, transform 150ms ease;
+  font-size: 0.95rem;
+}
+
+.location-chip:hover {
+  background: #eff6ff;
+  border-color: #94a3b8;
+  transform: translateY(-1px);
+}
+
+.location-chip.selected {
+  background: #0f172a;
+  color: #ffffff;
+  border-color: #111827;
 }
 
 .analyze-btn {
@@ -386,4 +474,74 @@
   background: #f1f5f9;
   border-radius: 10px;
   line-height: 1.6;
+}
+
+.citizen-dashboard {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+
+.citizen-header {
+  gap: 22px;
+}
+
+.header-actions {
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.card-panel {
+  background: var(--surface);
+  border-color: var(--border);
+  box-shadow: var(--shadow);
+}
+
+.risk-card {
+  border-left-color: var(--primary);
+  background: #f8faff;
+}
+
+.risk-level-badge {
+  background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+  box-shadow: 0 12px 30px rgba(79, 70, 229, 0.25);
+}
+
+.analyze-btn {
+  background: var(--primary);
+}
+
+.geo-btn,
+.location-chip,
+.analyze-btn {
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+}
+
+.location-chip {
+  background: #ffffff;
+}
+
+.location-chip.selected {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.location-chip:hover {
+  transform: translateY(-1px);
+}
+
+.risk-details p {
+  margin: 10px 0;
+}
+
+.panel-header h2 {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .header-actions {
+    width: 100%;
+    align-items: stretch;
+  }
 }

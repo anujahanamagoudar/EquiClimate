@@ -14,6 +14,32 @@
   padding-bottom: 24px;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.save-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  background: #0f172a;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.risk-badge {
+  padding: 8px 14px;
+  border-radius: 999px;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
 .govt-header h1 {
   margin: 0;
   font-size: 32px;

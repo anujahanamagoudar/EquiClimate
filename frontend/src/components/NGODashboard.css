@@ -15,6 +15,13 @@
   padding-bottom: 24px;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 .ngo-header h1 {
   margin: 0;
   font-size: 32px;

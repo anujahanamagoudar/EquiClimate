@@ -17,6 +17,8 @@ public class Region {
     private double populationDensity;
     private double income;
     private double emissions;
+    private double latitude;
+    private double longitude;
 
     private double vulnerabilityScore;
     private double gapScore;

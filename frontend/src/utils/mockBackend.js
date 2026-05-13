@@ -80,13 +80,13 @@ export const mockLogin = async (data) => {
 };
 
 export const mockGetRegions = async () => {
-  // Return mock regions data
+  // Return mock regions data with coordinates to support location lookups
   return {
     data: [
-      { id: 1, city: 'Urban Basin', aqi: 180, temperature: 38, income: 45000, populationDensity: 800, emissions: 650, gapScore: 7.5 },
-      { id: 2, city: 'Coastal Delta', aqi: 140, temperature: 32, income: 55000, populationDensity: 600, emissions: 480, gapScore: 5.2 },
-      { id: 3, city: 'River Plains', aqi: 200, temperature: 40, income: 35000, populationDensity: 900, emissions: 720, gapScore: 8.9 },
-      { id: 4, city: 'Forest Margin', aqi: 95, temperature: 28, income: 40000, populationDensity: 300, emissions: 250, gapScore: 2.1 },
+      { id: 1, city: 'Urban Basin', aqi: 180, temperature: 38, income: 45000, populationDensity: 800, emissions: 650, gapScore: 7.5, latitude: 28.7041, longitude: 77.1025 },
+      { id: 2, city: 'Coastal Delta', aqi: 140, temperature: 32, income: 55000, populationDensity: 600, emissions: 480, gapScore: 5.2, latitude: 19.0760, longitude: 72.8777 },
+      { id: 3, city: 'River Plains', aqi: 200, temperature: 40, income: 35000, populationDensity: 900, emissions: 720, gapScore: 8.9, latitude: 22.5726, longitude: 88.3639 },
+      { id: 4, city: 'Forest Margin', aqi: 95, temperature: 28, income: 40000, populationDensity: 300, emissions: 250, gapScore: 2.1, latitude: 13.0827, longitude: 80.2707 },
     ]
   };
 };

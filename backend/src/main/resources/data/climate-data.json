@@ -1,0 +1,199 @@
+{
+  "regions": [
+    {
+      "region": "Delhi",
+      "pollution": 90,
+      "floodRisk": 60,
+      "poverty": 55,
+      "tempRise": 3.0,
+      "population": 3200000,
+      "description": "National capital with severe air pollution"
+    },
+    {
+      "region": "Mumbai",
+      "pollution": 75,
+      "floodRisk": 85,
+      "poverty": 45,
+      "tempRise": 2.5,
+      "population": 2800000,
+      "description": "Coastal city facing flooding and pollution"
+    },
+    {
+      "region": "Bangalore",
+      "pollution": 70,
+      "floodRisk": 80,
+      "poverty": 45,
+      "tempRise": 2.1,
+      "population": 1600000,
+      "description": "IT hub with moderate climate challenges"
+    },
+    {
+      "region": "Kolkata",
+      "pollution": 85,
+      "floodRisk": 90,
+      "poverty": 60,
+      "tempRise": 2.8,
+      "population": 2000000,
+      "description": "Eastern metropolis with high flood risk"
+    },
+    {
+      "region": "Chennai",
+      "pollution": 72,
+      "floodRisk": 75,
+      "poverty": 50,
+      "tempRise": 2.3,
+      "population": 1200000,
+      "description": "Southern coastal city with high flood risk"
+    },
+    {
+      "region": "Hyderabad",
+      "pollution": 68,
+      "floodRisk": 70,
+      "poverty": 40,
+      "tempRise": 2.0,
+      "population": 1400000,
+      "description": "Moderate climate challenges"
+    },
+    {
+      "region": "Pune",
+      "pollution": 65,
+      "floodRisk": 65,
+      "poverty": 35,
+      "tempRise": 1.8,
+      "population": 900000,
+      "description": "Western city with manageable climate stress"
+    },
+    {
+      "region": "Ahmedabad",
+      "pollution": 80,
+      "floodRisk": 70,
+      "poverty": 48,
+      "tempRise": 2.6,
+      "population": 1100000,
+      "description": "Gujarat's major city with high pollution"
+    },
+    {
+      "region": "Jaipur",
+      "pollution": 75,
+      "floodRisk": 55,
+      "poverty": 50,
+      "tempRise": 3.2,
+      "population": 850000,
+      "description": "Pink city with high temperature rise"
+    },
+    {
+      "region": "Lucknow",
+      "pollution": 78,
+      "floodRisk": 72,
+      "poverty": 52,
+      "tempRise": 2.9,
+      "population": 750000,
+      "description": "Uttar Pradesh capital with multiple challenges"
+    },
+    {
+      "region": "Chandigarh",
+      "pollution": 55,
+      "floodRisk": 45,
+      "poverty": 25,
+      "tempRise": 1.5,
+      "population": 600000,
+      "description": "Well-planned city with low climate risk"
+    },
+    {
+      "region": "Indore",
+      "pollution": 72,
+      "floodRisk": 60,
+      "poverty": 42,
+      "tempRise": 2.2,
+      "population": 700000,
+      "description": "Central India with moderate risk"
+    },
+    {
+      "region": "Surat",
+      "pollution": 68,
+      "floodRisk": 80,
+      "poverty": 45,
+      "tempRise": 2.4,
+      "population": 950000,
+      "description": "Gujarat coastal city with high flood risk"
+    },
+    {
+      "region": "Nagpur",
+      "pollution": 70,
+      "floodRisk": 65,
+      "poverty": 48,
+      "tempRise": 2.3,
+      "population": 680000,
+      "description": "Central region with moderate challenges"
+    },
+    {
+      "region": "Bhopal",
+      "pollution": 75,
+      "floodRisk": 68,
+      "poverty": 50,
+      "tempRise": 2.5,
+      "population": 620000,
+      "description": "State capital with historical pollution concerns"
+    },
+    {
+      "region": "Vadodara",
+      "pollution": 65,
+      "floodRisk": 70,
+      "poverty": 40,
+      "tempRise": 2.1,
+      "population": 550000,
+      "description": "Gujarat city with moderate risk"
+    },
+    {
+      "region": "Visakhapatnam",
+      "pollution": 60,
+      "floodRisk": 75,
+      "poverty": 45,
+      "tempRise": 2.0,
+      "population": 520000,
+      "description": "Coastal Andhra city with high flood risk"
+    },
+    {
+      "region": "Coimbatore",
+      "pollution": 62,
+      "floodRisk": 65,
+      "poverty": 38,
+      "tempRise": 1.9,
+      "population": 480000,
+      "description": "Tamil Nadu city with manageable risk"
+    },
+    {
+      "region": "Ranchi",
+      "pollution": 58,
+      "floodRisk": 70,
+      "poverty": 55,
+      "tempRise": 2.0,
+      "population": 420000,
+      "description": "Jharkhand city with poverty and flood challenges"
+    },
+    {
+      "region": "Guwahati",
+      "pollution": 65,
+      "floodRisk": 85,
+      "poverty": 50,
+      "tempRise": 2.1,
+      "population": 380000,
+      "description": "Northeast city with severe flood risk"
+    },
+    {
+      "region": "Thiruvananthapuram",
+      "pollution": 55,
+      "floodRisk": 80,
+      "poverty": 35,
+      "tempRise": 1.7,
+      "population": 420000,
+      "description": "Kerala city with coastal flood challenges"
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2024-05-11",
+    "dataSource": "Climate Intelligence System",
+    "regions": 21,
+    "description": "Climate risk data for Indian cities - used for EquiClimate analytics"
+  }
+}

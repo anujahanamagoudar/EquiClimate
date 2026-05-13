@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { getWithFallback } from '../utils/apiClient';
 
 
-const Dashboard = ({ onOpenLogin, onOpenRegister }) => {
+const Dashboard = ({ onOpenLogin, onOpenRegister, onViewAnalytics }) => {
 
 const [regions, setRegions] = useState([]);
 const [highRisk, setHighRisk] = useState([]);
@@ -56,6 +56,9 @@ return ( <div className="dashboard-layout">
         </button>
         <button className="secondary-action" onClick={onOpenLogin}>
           Sign in
+        </button>
+        <button className="secondary-action" onClick={onViewAnalytics}>
+          View analytics
         </button>
       </div>
     </div>

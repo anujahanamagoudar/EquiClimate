@@ -1,10 +1,10 @@
 import './App.css';
-import { useState, useEffect } from 'react';
-import { getWithFallback } from './utils/apiClient';
+import { useState } from 'react';
 import Dashboard from './components/Dashboard';
 import CitizenDashboard from './components/CitizenDashboard';
 import GovtDashboard from './components/GovtDashboard';
 import NGODashboard from './components/NGODashboard';
+import AnalyticsDashboard from './components/AnalyticsDashboard';
 import UserTypeSelection from './components/UserTypeSelection';
 import LoginForm from './components/LoginForm';
 import RegisterForm from './components/RegisterForm';
@@ -53,32 +53,43 @@ function App() {
   };
 
   const handleBackToDashboard = () => {
-    setView('dashboard');
-    setUserType('');
-    setMode('login');
+    setView(isLoggedIn ? 'main' : 'dashboard');
+    if (!isLoggedIn) {
+      setUserType('');
+      setMode('login');
+    }
+  };
+
+  const handleViewAnalytics = () => {
+    setView('analytics');
   };
 
   return (
     <div className="app-shell">
-      {isLoggedIn && view === 'main' ? (
+      {view === 'analytics' ? (
+        <AnalyticsDashboard onBack={handleBackToDashboard} />
+      ) : isLoggedIn && view === 'main' ? (
         loggedInUserType === 'Citizen' ? (
           <CitizenDashboard
             userType={loggedInUserType}
             onLogout={handleLogout}
+            onViewAnalytics={handleViewAnalytics}
           />
         ) : loggedInUserType === 'Government' ? (
           <GovtDashboard
             userType={loggedInUserType}
             onLogout={handleLogout}
+            onViewAnalytics={handleViewAnalytics}
           />
         ) : (
           <NGODashboard
             userType={loggedInUserType}
             onLogout={handleLogout}
+            onViewAnalytics={handleViewAnalytics}
           />
         )
       ) : view === 'dashboard' ? (
-        <Dashboard onOpenLogin={openLogin} onOpenRegister={openRegister} />
+        <Dashboard onOpenLogin={openLogin} onOpenRegister={openRegister} onViewAnalytics={handleViewAnalytics} />
       ) : (
         <div className="auth-layout">
           <header className="auth-header">
